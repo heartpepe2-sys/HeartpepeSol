@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="$HEARTPEPE – The Solana frog with a heart. 100% fair, community-owned, zero taxes." />
+  <title>$HEARTPEPE 🐸❤️ | Meme Coin with Heart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --pepe-green:#00ff9d;
+      --heart-red:#ff0066;
+      --bg:#0a0a0a;
+      --card:#0f0f0f;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:#fff;font-family:'Comic Neue',cursive;text-align:center;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:0 1rem}
+    header{padding:2rem 0;background:linear-gradient(180deg,#000,#111)}
+    .logo{max-width:220px;animation:pulse 2s infinite;border-radius:12px}
+    h1{font-family:'Press Start 2P';font-size:2.2rem;margin:.6rem 0;background:linear-gradient(90deg,var(--pepe-green),var(--heart-red));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .tagline{font-size:1.05rem;margin-bottom:.6rem;opacity:.95}
+    .card{background:var(--card);border-radius:12px;padding:1rem;margin:1rem auto;box-shadow:0 8px 30px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.02)}
+    .section{padding:2rem 1rem;background:rgba(255,255,255,0.02);margin:1rem 0}
+    .ca-box{background:#111;border:3px solid var(--pepe-green);padding:1rem;border-radius:12px;word-break:break-all;font-family:monospace;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+    .copy-btn{background:var(--heart-red);color:#fff;border:0;padding:.6rem .9rem;border-radius:8px;cursor:pointer;font-weight:700}
+    .btn-group{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin:1.2rem 0}
+    .btn{background:var(--pepe-green);color:#000;padding:.9rem 1.4rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1rem;transition:.2s;box-shadow:0 6px 20px rgba(0,255,157,0.12)}
+    .btn:hover{transform:translateY(-3px)}
+    .social-btn{background:var(--heart-red);color:#fff}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:start}
+    @media(max-width:880px){.two-col{grid-template-columns:1fr}}
+    .roadmap{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-top:1rem}
+    .phase{background:#0e0e0e;border:2px solid var(--pepe-green);border-radius:12px;padding:1rem;text-align:left}
+    .phase h3{margin:0 0 .5rem 0;color:var(--pepe-green);font-size:1.02rem}
+    .phase.done{border-color:var(--heart-red)}
+    .badge{font-weight:700;display:inline-block;padding:.2rem .5rem;border-radius:8px;font-size:.9rem;margin-bottom:.6rem}
+    .badge.done{background:rgba(255,0,102,0.08);color:var(--heart-red);border:1px solid rgba(255,0,102,0.12)}
+    .badge.in{background:rgba(0,255,157,0.08);color:var(--pepe-green);border:1px solid rgba(0,255,157,0.12)}
+    .badge.up{background:rgba(255,255,255,0.02);color:#ddd;border:1px solid rgba(255,255,255,0.03)}
+    .tokenomics{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:.8rem}
+    .tok{background:#101010;padding:1rem;border-radius:10px;border:1px solid rgba(255,255,255,0.03);min-width:160px}
+    ul.clean{list-style:none;padding-left:0;font-size:1rem;line-height:1.7;text-align:left;max-width:760px;margin:0 auto}
+    footer{padding:1.5rem;background:#000;font-size:.9rem;opacity:.9;margin-top:1rem}
+    @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+    .small{font-size:.95rem;opacity:.95}
+  </style>
+</head>
+<body>
+  <header class="container">
+    <img src="https://pbs.twimg.com/media/G41OkocXcAAxI82.jpg" alt="$HEARTPEPE Logo" class="logo">
+    <h1>$HEARTPEPE</h1>
+    <p class="tagline">The frog that loves harder than any rug. 100% fair launch on Solana 🐸❤️</p>
+  </header>
+
+  <main class="container">
+    <section class="card section">
+      <h2>About $HEARTPEPE</h2>
+      <p class="small">$HEARTPEPE is a community-first meme token on Solana. Born from jokes, grown with heart — we believe transparency, fun, and giving back can build value that lasts. No presales, no dev wallets, and a focus on community events and charity.</p>
+    </section>
+
+    <section class="card section">
+      <div class="ca-box" id="caBox">
+        <div style="text-align:left;">
+          <strong>Contract Address (Solana):</strong><br>
+          <span id="contract">Eaa7Y14MtMeKWn7knYpuLajszSVZTndn2vnAVBXXpump</span>
+        </div>
+        <div style="display:flex;gap:.5rem;align-items:center">
+          <button class="copy-btn" onclick="copyCA()">COPY</button>
+        </div>
+      </div>
+
+      <div style="margin:1rem auto;max-width:720px;">
+        <div class="card" style="padding:0;overflow:hidden;border-radius:12px">
+          <iframe src="https://dexscreener.com/solana/Eaa7Y14MtMeKWn7knYpuLajszSVZTndn2vnAVBXXpump?embed=1&theme=dark" style="width:100%;height:420px;border:0"></iframe>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <a href="https://dexscreener.com/solana/Eaa7Y14MtMeKWn7knYpuLajszSVZTndn2vnAVBXXpump" target="_blank" class="btn">📈 Chart</a>
+        <a href="https://phantom.app/" target="_blank" class="btn">👻 Buy on Phantom</a>
+        <a href="https://t.me/+lgN-3hyNzrYwYjlk" target="_blank" class="btn social-btn">💬 Telegram</a>
+        <a href="https://x.com/Reuben16177" target="_blank" class="btn social-btn">🐦 X / Twitter</a>
+      </div>
+    </section>
+
+    <section class="card section">
+      <h2>Tokenomics</h2>
+      <div class="tokenomics">
+        <div class="tok"><strong>Total Supply</strong><div class="small">1,000,000,000</div></div>
+        <div class="tok"><strong>Tax</strong><div class="small">0% (Zero taxes)</div></div>
+        <div class="tok"><strong>Dev Wallets</strong><div class="small">None — renounced</div></div>
+        <div class="tok"><strong>Liquidity</strong><div class="small">Locked</div></div>
+        <div class="tok"><strong>Burn</strong><div class="small">— (no scheduled burn)</div></div>
+      </div>
+      <p class="small" style="margin-top:.8rem">If you want a more detailed distribution (e.g., liquidity %, community pool %, team %, burn %), tell me the splits and I’ll add a neat chart.</p>
+    </section>
+
+    <section class="card section">
+      <h2>Roadmap (Live)</h2>
+      <div class="roadmap">
+        <div class="phase done">
+          <h3>Phase 1 ✅ — The Birth of $HEARTPEPE</h3>
+          <div class="badge done">✅ Completed</div>
+          <p class="small">We launched fair and fast: no presale, no dev bags. The community grew organically on Telegram and X, and initial DEX liquidity was locked — laying a transparent foundation for growth.</p>
+        </div>
+
+        <div class="phase done">
+          <h3>Phase 2 ✅ — Expansion & Recognition</h3>
+          <div class="badge done">✅ Completed</div>
+          <p class="small">Listings on Coinmun, Coindrizzy, and Coingem increased visibility. Holder count passed 1,000 and our meme contests sparked community creativity and engagement.</p>
+        </div>
+
+        <div class="phase">
+          <h3>Phase 3 🚀 — Heart-Powered Growth</h3>
+          <div class="badge in">🚀 In Progress</div>
+          <p class="small">We are pursuing CEX listings, launching the limited "Heart Collection" NFTs, and organizing charity donation streams — turning meme energy into real-world impact.</p>
+        </div>
+
+        <div class="phase">
+          <h3>Phase 4 🌙 — The Heartverse</h3>
+          <div class="badge up">🌙 Upcoming</div>
+          <p class="small">Long-term goals: reach top 50 Solana meme coins, launch the Heartpepe Metaverse Lounge for holders, and host community-driven games and NFT events.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card section">
+      <h2>Why $HEARTPEPE?</h2>
+      <ul class="clean">
+        <li>💚 1 Billion total supply – no dev wallets, no presale</li>
+        <li>💚 Zero taxes – every sat is yours</li>
+        <li>💚 Liquidity locked & contract renounced</li>
+        <li>💚 Community raids, memes, giveaways every week</li>
+        <li>💚 Listed on Coinmun, Coindrizzy, Coingem</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>© 2025 $HEARTPEPE – Built with ❤️ on Solana</p>
+    <p>Dev: <a href="https://x.com/Reuben16177" style="color:var(--pepe-green)">@Reuben16177</a> | Community: <a href="https://t.me/+lgN-3hyNzrYwYjlk" style="color:var(--heart-red)">Telegram</a></p>
+    <p>Not financial advice. DYOR. Spread love, HODL frogs.</p>
+  </footer>
+
+  <script>
+    function copyCA(){
+      const text = document.getElementById('contract').innerText.trim();
+      navigator.clipboard.writeText(text).then(()=>{
+        const btn = document.querySelector('.copy-btn');
+        const old = btn.innerText;
+        btn.innerText = 'COPIED';
+        setTimeout(()=> btn.innerText = 'COPY',1500);
+      });
+    }
+
+    // lightweight confetti
+    (function(){
+      const canvas=document.createElement('canvas'); canvas.style.position='fixed'; canvas.style.top=0; canvas.style.left=0;
+      canvas.style.pointerEvents='none'; canvas.style.zIndex=9999; document.body.appendChild(canvas);
+      const ctx=canvas.getContext('2d');
+      function resize(){canvas.width=window.innerWidth; canvas.height=window.innerHeight;}
+      window.addEventListener('resize',resize); resize();
+      const colors=['#00ff9d','#ff0066'];
+      let parts=[];
+      function spawn(){ return {x:Math.random()*canvas.width,y:-10,r:Math.random()*6+2,s:Math.random()*2+1,c:colors[(Math.random()*2)|0]}; }
+      for(let i=0;i<60;i++) parts.push(spawn());
+      function loop(){ ctx.clearRect(0,0,canvas.width,canvas.height); parts.forEach(pt=>{ ctx.fillStyle=pt.c; ctx.beginPath(); ctx.arc(pt.x,pt.y,pt.r,0,Math.PI*2); ctx.fill(); pt.y+=pt.s; pt.x+=Math.sin(pt.y/20)*1.2; if(pt.y>canvas.height){ Object.assign(pt,spawn()); pt.y=-10; } }); requestAnimationFrame(loop); }
+      loop();
+    })();
+  </script>
+</body>
+</html>
